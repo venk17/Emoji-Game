@@ -1,24 +1,33 @@
-/* Write your code here. */
-.emoji-card {
-  cursor: pointer;
-  display: inline-block;
-  margin: 10px;
-}
-
-.emoji-card img {
-  width: 50px;
-  height: 50px;
-}
-
-.win-lose-card img {
-  width: 100px;
-  height: 100px;
-}
-
-.navbar {
+.app-container {
+  background-image: linear-gradient(to bottom right, #9796f0, #fbc7d4);
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #6a59ff;
-  color: white;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.game-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.emojis-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media screen and (min-width: 768px) {
+  .emojis-container {
+    padding: 20px;
+  }
 }
