@@ -1,1 +1,106 @@
 /* Write your code here. */
+.win-or-lose-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff33;
+  border: 3px solid #ffffff30;
+  border-radius: 24px;
+  padding: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.game-status {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.current-score-label {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 0;
+}
+
+.current-score-value {
+  color: #6a59ff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px 0 16px;
+}
+
+.play-again-button {
+  color: #3d3d3d;
+  background-color: #ffce27;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  order: 0;
+  margin-bottom: 20px;
+}
+
+.win-or-lose-image {
+  width: 150px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .win-or-lose-card {
+    flex-direction: row;
+    padding: 32px;
+  }
+
+  .details-section {
+    order: 0;
+  }
+
+  .image-section {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .game-status {
+    font-size: 48px;
+  }
+
+  .current-score-label {
+    font-size: 24px;
+  }
+
+  .current-score-value {
+    font-size: 48px;
+  }
+
+  .play-again-button {
+    font-size: 18px;
+  }
+
+  .win-or-lose-image {
+    width: 250px;
+    height: 300px;
+  }
+}
